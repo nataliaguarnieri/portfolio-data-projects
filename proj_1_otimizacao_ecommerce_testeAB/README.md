@@ -55,9 +55,40 @@ Os dados foram gerados em Python de forma controlada para simular um cenário re
 
 ---
 
+### **Metodologia para a Análise dos Dados**
+
+#### **Análise Primária: Teste Qui-Quadrado**
+
+O **Teste Qui-Quadrado ($\chi^2$)** foi utilizado para validar as diferenças nas taxas de conversão (comparação de proporções). Este teste é o **padrão da indústria** para essa finalidade e confirmou a significância estatística do resultado.
+
+#### **Análise de Segmentação: Regressão Logística**
+
+Para isolar o efeito do teste A/B e verificar o impacto de variáveis de segmento, foi utilizada a **Regressão Logística**. Este modelo avançado permitiu quantificar a Razão de Chances (*Odds Ratio*) de conversão, controlando simultaneamente o efeito de Dispositivo, Categoria e Fonte de Tráfego.
+
+---
+
+### **Resultados Chave do Teste A/B**
+
+O Teste A/B demonstrou uma clara e robusta vitória do grupo de Teste (novo design de página de produto):
+
+| Etapa do Funil | Taxa de Conversão do Controle | Taxa de Conversão do Teste | Lift (%) | Conclusão Estatística |
+| :--- | :--- | :--- | :--- | :--- |
+| **View $\rightarrow$ Add to Cart** | $10.38\%$ | $14.29\%$ | **+37.65%** | **Significativo** ($p \ll 0.05$) |
+| **Add to Cart $\rightarrow$ Purchase** | $25.08\%$ | $29.59\%$ | **+17.96%** | **Significativo** ($p \ll 0.05$) |
+
+#### **Insights da Regressão Logística:**
+
+O modelo de Regressão Logística reforçou a conclusão primária e forneceu o principal *insight* de segmentação:
+
+1.  **Vitória Isolada:** Um usuário no grupo de Teste teve **65.15% mais chance de converter** (*Odds Ratio = 1.65*) em comparação com o grupo de Controle, provando que o novo design é o principal *driver* do aumento.
+2.  **Consistência:** Nenhuma das variáveis de segmento (dispositivo, tráfego ou localização) teve um impacto estatisticamente significativo na conversão final.
+    * **Conclusão de Negócio:** O novo design funciona de maneira **consistente** em todos os segmentos, simplificando a implementação e eliminando a necessidade de otimizações segmentadas imediatas.
+
+---
+
 ### **Tecnologias Utilizadas**
 
 * **Linguagem de Programação:** `Python`
 * **Manipulação de Dados:** `Pandas` e `NumPy`
-* **Análise Estatística:** `SciPy` (a ser utilizado)
+* **Análise Estatística:** `SciPy` (Teste Qui-Quadrado) e `Statsmodels` (Regressão Logística)
 * **Visualização (dashboard):** `Power BI` (a ser utilizado)
