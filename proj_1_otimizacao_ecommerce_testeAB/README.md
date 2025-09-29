@@ -86,9 +86,63 @@ O modelo de Regressão Logística reforçou a conclusão primária e forneceu o 
 
 ---
 
+### **Visualização e Design (Power BI + UX)**
+
+O dashboard foi construído com foco em Hierarquia Visual e Design Clean & Modern (UX), utilizando um template customizado no Power BI.
+
+* **Página 1 (Performance):** Focada em provas (KPIs e Funil) e robustez (segmentação por dispositivo e tráfego).
+
+* **Página 2 (Conclusão):** Dedicada exclusivamente às Recomendações Estratégicas e ao resumo do impacto financeiro do Teste.
+
+**Destaque: O Verde (Teste) e o Cinza (Controle) são usados consistentemente para guiar o olhar e comunicar a vitória do novo design de forma instantânea.**
+
+---
+
 ### **Tecnologias Utilizadas**
 
 * **Linguagem de Programação:** `Python`
 * **Manipulação de Dados:** `Pandas` e `NumPy`
 * **Análise Estatística:** `SciPy` (Teste Qui-Quadrado) e `Statsmodels` (Regressão Logística)
 * **Visualização (dashboard):** `Power BI` (a ser utilizado)
+
+---
+
+### **Estrutura do Repositório**
+
+A estrutura de arquivos do projeto foi organizada para facilitar a revisão da metodologia e dos resultados:
+
+proj_1_otimizacao_ecommerce_testeAB/
+├── data/
+│   └── ecommerce_events_data.csv        <-- Conjunto de dados sintético
+├── notebooks/
+│   ├── analise_estatistica_primaria_teste_ab.ipynb  <-- Teste Qui-Quadrado
+│   ├── analise_estatistica_secundaria_regressao_l...<-- Regressão Logística
+│   └── notebook_geracao_dados.ipynb     <-- Script de geração do dataset
+├── AB_Testing_Ecomm_Final.pbix          <-- O Dashboard Power BI (Modelo, DAX, UX)
+└── README.md                            <-- Documentação do Projeto
+
+---
+
+### **Plano de Ação: 5 Recomendações Estratégicas**
+
+Com base na significância estatística e no impacto financeiro, o projeto conclui com um plano de ação imediato para a equipe de Produto e Liderança:
+
+1. **🚀 Implementação Imediata:** Aprovar e lançar o novo design para **100% da base** de usuários o mais rápido possível, interrompendo o Teste A/B.
+
+* **Motivo:** O Lift é estatisticamente provado e garante que mais vendas estão sendo perdidas a cada dia em que o design antigo permanece ativo.
+
+2. **💰 Foco no Ganho Financeiro:** Comunicar o **Ganho de Receita de R$ 143 Mil** à liderança.
+
+* **Motivo:** O projeto é um driver financeiro primário e justificou o investimento em otimização de UX/Produto.
+
+3. **✅ Robustez da Solução:** Manter o design como uma **solução única** (sem segmentação por dispositivo ou tráfego).
+
+* **Motivo:** A Regressão Logística provou que o benefício do design é **consistente** em todos os segmentos, simplificando a implementação.
+
+4. **📉 Otimização de Marketing:** O time de Marketing deve revisar o **Custo por Aquisição (CPA)**.
+
+* **Motivo:** A taxa de conversão mais alta da página de produto torna o gasto com tráfego mais **eficiente**.
+
+5. **🎯 Próximo Foco:** Mudar o foco da otimização para a **etapa de Checkout/Pagamento**.
+
+* **Motivo:** O Funil indica que, após o novo design, a maior taxa de abandono ocorre agora entre *Cart* e *Purchase*, sendo a próxima área de maior potencial de retorno.
