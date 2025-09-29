@@ -103,24 +103,7 @@ O dashboard foi construído com foco em Hierarquia Visual e Design Clean & Moder
 * **Linguagem de Programação:** `Python`
 * **Manipulação de Dados:** `Pandas` e `NumPy`
 * **Análise Estatística:** `SciPy` (Teste Qui-Quadrado) e `Statsmodels` (Regressão Logística)
-* **Visualização (dashboard):** `Power BI` (a ser utilizado)
-
----
-
-### **Estrutura do Repositório**
-
-A estrutura de arquivos do projeto foi organizada para facilitar a revisão da metodologia e dos resultados:
-
-proj_1_otimizacao_ecommerce_testeAB/
-├── data/
-│   └── ecommerce_events_data.csv        <-- Conjunto de dados sintético
-├── notebooks/
-│   ├── analise_estatistica_primaria_teste_ab.ipynb  <-- Teste Qui-Quadrado
-│   ├── analise_estatistica_secundaria_regressao_l...<-- Regressão Logística
-│   └── notebook_geracao_dados.ipynb     <-- Script de geração do dataset
-├── AB_Testing_Ecomm_Final.pbix          <-- O Dashboard Power BI (Modelo, DAX, UX)
-└── README.md                            <-- Documentação do Projeto
-
+* **Visualização (dashboard):** `Power BI`
 ---
 
 ### **Plano de Ação: 5 Recomendações Estratégicas**
